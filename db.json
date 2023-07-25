@@ -1,0 +1,62 @@
+{
+    "products": [
+    {
+      "id":1,
+      "name":"One plus nord",
+      "price": 28000.75876,
+      "image": "/assets/oneplusnord.jpg",
+      "code":"M-001",
+      "rating": 3.5,
+      "publishedDate": "Mon Jun 19 2023 11:35:22 GMT+0530 (India Standard Time)",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur explicabo  rem modi corporis reiciendis architecto. Saepe ad itaque quam voluptate optio sapiente eos qui, alias deserunt! Quis, similique."
+    },
+    {
+      "id":2,
+      "name":"IPhone 13",
+      "price": 120000.487584,
+      "code":"M-002",
+      "rating":4,
+      "publishedDate": "Mon Jun 19 2023 11:35:22 GMT+0530 (India Standard Time)",
+      "image": "/assets/iphone13.jpg"
+    },
+    {
+      "id":3,
+      "name":"LG TV",
+      "price": 40000.45,
+      "image": "/assets/lgtv.jpg",
+      "code":"T-001",
+      "rating":5,
+      "publishedDate": "Mon Jun 19 2023 11:35:22 GMT+0530 (India Standard Time)",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur explicabo rem modi corporis reiciendis architecto. Saepe ad itaque quam voluptate optio sapiente eos qui, alias deserunt! Quis, similique."
+    },
+    {
+      "id":4,
+      "name":"Samsung Washing Machine",
+      "price": 27000.4,
+      "code":"W-001",
+      "rating":3,
+      "publishedDate": "Mon Jun 19 2023 11:35:22 GMT+0530 (India Standard Time)",
+      "image": "/assets/samsungwashingmachine.jpg"
+    },
+    {
+      "id":5,
+      "name":"Apple Watch",
+      "price": 60000.3646,
+      "image": "/assets/applewatch.jpg",
+      "code":"WT-001",
+      "rating":4.5,
+      "publishedDate": "Mon Jun 19 2023 11:35:22 GMT+0530 (India Standard Time)",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur explicabo rem modi corporis reiciendis architecto. Saepe ad itaque quam voluptate optio sapiente eos qui, alias deserunt! Quis, similique."
+    },
+    {
+      "id":6,
+      "name":"Samsung Galaxy S22",
+      "price": 108000.3454,
+      "image": "/assets/samsunggalaxys22.jpg",
+      "code":"M-003",
+      "rating":3,
+      "publishedDate": "Mon Jun 19 2023 11:35:22 GMT+0530 (India Standard Time)",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur explicabo id rem modi corporis reiciendis architecto. Saepe ad itaque quam voluptate optio sapiente eos qui, alias deserunt! Quis, similique."
+    }
+    ]
+}

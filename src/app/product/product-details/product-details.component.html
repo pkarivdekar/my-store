@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="goBack()">Back</button>
+<button class="btn btn-primary" (click)="goPrevious()">Previous</button>
+<button class="btn btn-primary" (click)="goNext()">Next</button>
+<h1>{{product.name}}</h1>
+<h4>{{product.description}}</h4>
+<button class="btn btn-primary" [routerLink]="['/products', product.id, 'reviews']">Review</button>
+<router-outlet></router-outlet>
+

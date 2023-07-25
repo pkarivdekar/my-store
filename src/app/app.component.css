@@ -1,0 +1,18 @@
+.bg-purple {
+  background-color: #c9aae5;
+}
+
+.bg-maroon {
+  background-color: #cf5656;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #cf5656;
+}

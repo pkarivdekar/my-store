@@ -1,0 +1,10 @@
+<h3>Parent Component</h3>
+<input type="number" placeholder="Enter a number" class="form-control" [(ngModel)]="number1" />
+<br />
+<input type="number" placeholder="Enter a number" class="form-control" [(ngModel)]="number2" />
+<br>
+<p>number1: {{number1 | percent}}</p>
+<p>number2: {{number2}}</p>
+
+<br>
+<app-my-result [num1]="number1" [num2]="number2" (resultEmit)="getResult($event)"></app-my-result>

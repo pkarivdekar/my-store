@@ -1,0 +1,70 @@
+<h3>Welcome, {{name}}</h3>
+<p *ngIf="age">You are {{age}} years old</p>
+
+<p *ngIf="age>0 && age<=18 then minor"></p>
+<p *ngIf="age>18 && age<=60 then adult"></p>
+<p *ngIf="age>60 then senior"></p>
+
+<ng-template #minor></ng-template>
+<ng-template #adult></ng-template>
+<ng-template #senior></ng-template>
+
+<div [ngSwitch]="day">
+    <p *ngSwitchDefault>Something is wrong</p>
+    <p *ngSwitchCase="1">Monday</p>
+    <p *ngSwitchCase="6">Saturday</p>
+    <p *ngSwitchCase="2">Tuesday</p>
+    <p *ngSwitchCase="5">Friday</p>
+    <p *ngSwitchCase="3">Wednesday</p>
+    <p *ngSwitchCase="4">Thursday</p>
+    <p *ngSwitchCase="7">Sunday</p>
+</div>
+
+<!-- <input type="text" [formControl]="author" />
+{{author | json}}
+<br>
+<b>{{author.value}}</b> -->
+
+<form [formGroup]="profileForm" (ngSubmit)="submitProfile()">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" formControlName="name">
+    </div>
+    <!--{{nameCtrl.valid}}-->
+    <div class="alert alert-danger" *ngIf="nameCtrl.dirty && nameCtrl.invalid && nameCtrl.hasError('require')">Name not provided</div>
+
+    <div class="alert alert-danger" *ngIf="nameCtrl.dirty && nameCtrl.invalid && nameCtrl.hasError('minlength')">
+        Name should have 3 characters
+    </div>
+
+    <div class="alert alert-danger" *ngIf="nameCtrl.dirty && nameCtrl.invalid && nameCtrl.hasError('forbidden')">
+        Bob name not allowed
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="email">
+    </div>
+    <!--{{emailCtrl.valid}}-->
+    <div class="alert alert-danger" *ngIf="emailCtrl.dirty && emailCtrl.invalid && emailCtrl.hasError('required')">Email not provided</div>
+
+    <div class="alert alert-danger" *ngIf="emailCtrl.dirty && emailCtrl.invalid && emailCtrl.hasError('email')">Email is not
+        well formed</div>
+
+    <div class="mb-3">
+        <label for="mobile" class="form-label">Mobile</label>
+        <input type="text" class="form-control" formControlName="mobile">
+    </div>
+
+    <div formGroupName="address">
+        <input type="text" class="form-control" placeholder="City" formControlName="city">
+
+        <input type="text" class="form-control" placeholder="State" formControlName="state">
+
+        <input type="text" class="form-control" placeholder="Country" formControlName="country">
+    </div>
+    
+    <button type="button" class="btn btn-primary">Submit</button>
+
+    {{profileForm.value | json}}
+</form>
